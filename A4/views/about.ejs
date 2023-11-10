@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <%- include('partials/navbar', {page: '/about'}) %>
+  
+    <div class="container mx-auto">
+      <div class="hero bg-base-200 rounded-lg p-6">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">About</h1>
+            <p class="py-6">
+              Everything to know about me - the designer & developer.<br />(Jerus
+              Allen Dorotan : 110225216).
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+        <div class="md:order-1">
+          <img
+            class="w-full rounded-lg"
+            src="https://media.npr.org/assets/img/2022/02/23/eldenring_21_4k-25120461292d0c3a0414.08944875_wide-319af7cfd3c138293a179491fcfc58e15405f536-s1100-c50.jpg"
+            alt="ER Img"
+            class="w-full"
+          />
+        </div>
+
+        <div class="md:order-2">
+          <div class="p-4">
+            <p>
+              My name's Allen. I'm currently in my Second Year of CPA studying
+              at Seneca Newnham College. Before College, I mostly spend most of
+              my free time playing video games; mainly FPS shooters. The Image
+              on the left is from Elden Ring which is one of my favourite games,
+              though it isnt a shooter. It's made by the creators of the Dark
+              Souls Trilogy and Sekiro and is one of most difficult yet
+              rewarding gaming experience I've had in a while. I recommend it to
+              anyone who wants a challenging game. The game's open-world
+              experience as well as the lore is one of most dark and unforgiving
+              experience I've had from any game I've played, but its a beautiful
+              and a once in a playthrough experience that it even received Game
+              of the Year Award during 2022.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
