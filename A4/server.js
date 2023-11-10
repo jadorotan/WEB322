@@ -8,7 +8,7 @@
 *
 * Name: Jerus Allen Dorotan Student ID: 110225216 Date: 11-09-2023
 *
-* Published URL: https://lego-a4-jadorotan.cyclic.app
+* Published URL: https://legoa4-jadorotan.cyclic.app/
 *
 ********************************************************************************/
 
