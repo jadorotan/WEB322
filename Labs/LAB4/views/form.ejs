@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Lab 4</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+    <h2>User Registration Form</h2>
+
+    <form method="post" action="/submit-multipart" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+  
+      <br>
+
+      <label for="color">Select Your Favourite Color:</label> <br>
+      <select id="color" name="color">
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="violter">Violet</option>
+        <option value="indigo">Indigo</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <br>
+      
+      <label for="fileUploaded">Choose a file:</label>
+      <input type="file" id="fileUploaded" name="fileUploaded">
+
+      <br>
+
+      <label>
+        I agree to the terms and conditions
+        <input type="checkbox" id="terms" name="terms">
+      </label>
+      
+      <br>
+
+      <button class="btn btn-active btn-accent" type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
