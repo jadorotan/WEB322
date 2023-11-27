@@ -90,7 +90,7 @@ app.post("/lego/addSet", async (req, res) => {
       res.redirect('/lego/sets')
 
     } catch (error) {
-      res.render("500", { message: "Duplicate Data Insertion. Adding Set Failed." });
+        res.status(500).render("500", { message: "Duplicate Data Insertion. Adding Set Failed." });
     }
 });
     
@@ -113,7 +113,7 @@ app.post("/lego/editSet", async (req, res) => {
       res.redirect('/lego/sets')
 
     } catch (err) {
-      res.render("500", { message: "Updating of Set Failed." });
+      res.status(500).render("500", { message: "Updating of Set Failed." });
     }
 });
 
@@ -123,7 +123,7 @@ app.get("/lego/deleteSet/:num", async (req,res)=>{
       const setData = await legoData.deleteSet(setNum);
       res.redirect('/lego/sets')
     } catch (err) {
-      res.render("500", { message: "Deletion of Set Failed." });
+        res.status(500).render("500", { message: "Deletion of Set Failed." });
     }
 });
   
