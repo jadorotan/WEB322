@@ -74,7 +74,6 @@ app.get('/lego/sets/:setNum', async (req, res) => {
 
 app.get("/lego/addSet", async (req,res) =>{ 
     try {
-
       let themeData = await legoData.getAllThemes();
       res.render("addSet", { themes: themeData });
 
