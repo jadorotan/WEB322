@@ -120,7 +120,7 @@ app.get("/lego/deleteSet/:num", async (req,res)=>{
     try {
       const setNum = req.params.num;
       const setData = await legoData.deleteSet(setNum);
-      res.redirect('/lego/sets')
+      res.redirect('/lego/sets');
     } catch (err) {
         res.render("500", { message: "Deletion of Set Failed." });
     }
